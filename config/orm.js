@@ -1,4 +1,4 @@
-import connection from './connection.js';
+const connection = require("../config/connection.js");
 
 const orm = {
   // selectAll()
