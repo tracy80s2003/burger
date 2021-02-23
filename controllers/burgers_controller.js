@@ -37,4 +37,4 @@ router.put("/burgers/update/:id", function(req,res){
 });
 
 // export
-module.exports = burgers_controller;
+module.exports = router;

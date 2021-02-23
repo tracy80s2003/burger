@@ -1,6 +1,7 @@
 const mysql = require('mysql')
 const express = require('express');
 const exphbs  = require('express-handlebars');
+const routes = require('./controllers/burgers_controller')
  
 const app = express();
 const PORT = process.env.PORT || 3000
@@ -19,3 +20,9 @@ var connection = mysql.createConnection({
   database : 'burgers_db',
   password : 'rootroot',
 });
+
+app.use(routes)
+
+app.listen(PORT, ()=>{
+
+})
